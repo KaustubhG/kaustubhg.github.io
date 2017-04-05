@@ -1,0 +1,59 @@
+
+# SEO settings
+title: "K"
+title2: "g" # default: ""
+description: "A blog by an engineer, grad-student, programmer... "
+keywords: ""
+url: "https://kaustubhg.github.io" # site url
+baseurl: "" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+#google_analytics: UA-XXXXX-XX
+repo: http://github.com/kaustubhg
+#disqus_shortname: "hnbloggithub"
+#twitter_username: "HeiswayiNrird"
+#comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Kaustubh Gondhalekar"
+  job      : "engineer"
+  bio      : "This is a space where I record technical stuff and other things that cross my mind."
+  thumb    : /images/author.jpg
+  email    : kgondha@ncsu.edu
+  url      : https://kaustubhg.github.io
+  github   : http://github.com/kaustubhg
+  twitter  : 
+  facebook : 
+  linkedin : 
+
+# social settings
+og_locale: "en_US"
+#twitter_card: "summary_large_image"
+#twitter_site: "@HeiswayiNrird"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
