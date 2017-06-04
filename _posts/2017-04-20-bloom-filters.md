@@ -64,9 +64,9 @@ To test if an element is present in the set, we follow the same procedure of has
 bool contains(BloomFilter b_f, Element X){
 
 	if(b_f[h_1(X)] == 1 && b_f[h_2(X)] == 1 && .... && b_f[h_k(X)] == 1){
-		return true //element may be present;
+		return true; //element may be present
 	}
-	else return false //element is definitely not present;
+	else return false; //element is definitely not present
 }
 
 ```
